@@ -446,7 +446,7 @@
               
               <li class="item-toc ">
                 <a href="debug.html" class="sidebar-link ">
-                  <span>Debugging</span>
+                  <span></span>
                 </a>
               </li>
             
@@ -602,7 +602,7 @@
     </div>
 
     <div class="document-formatting">
-      <h2 id="Debugging"><a href="#Debugging" class="headerlink" title="Debugging"></a>Debugging</h2><p><strong>If you’ve got the <a href="/debug.html">debug package</a> enabled, a groups debugging UI is available at <a href="http://0.0.0.0:3000/debug/groups" target="_blank" rel="noopener">http://0.0.0.0:3000/debug/groups</a>.</strong></p>
+      <h2 id="Debugging"><a href="#Debugging" class="headerlink" title="Debugging"></a>Debugging</h2><p><strong>If you’ve got the <a href="/debug.html">debug package</a> enabled, a groups debugging UI is available at <a href="http://0.0.0.0:3000/groups" target="_blank" rel="noopener">http://0.0.0.0:3000/groups</a>.</strong></p>
 <h2 id="Groups-amp-Actions"><a href="#Groups-amp-Actions" class="headerlink" title="Groups &amp; Actions"></a>Groups &amp; Actions</h2><p>When it comes to controlling who can do what in your Vulcan app, it’s important to understand two concepts, <strong>groups</strong> and <strong>actions</strong>. </p>
 <p>A <strong>group</strong> (such as <code>admins</code> or <code>mods</code>) represents a list of users which can perform specific actions (such as <code>post.update</code> or <code>post.delete</code>). </p>
 <p>To test if a user can perform an action, we don’t check if they belong to a specific group (e.g. <code>user.isAdmin === true</code>), but instead if <em>at least one of the groups they belong to</em> has the rights to perform the current action.  </p>
