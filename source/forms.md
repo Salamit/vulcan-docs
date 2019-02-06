@@ -141,6 +141,15 @@ Whether to repeat validation errors at the bottom of the form.
 
 A callback called on form submission on the form data. Should return the `data` object as well.
 
+For example
+```jsx
+ <Components.SmartForm
+    collection={Movies}
+    mutationFragment={getFragment(‘MoviesItemFragment’)}
+    submitCallback={movie => { console.log(movie); movie.title = 'bar'; return movie }}
+ />
+ ```
+
 #### `successCallback(document)`
 
 A callback called on mutation success.
